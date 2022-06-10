@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="900.0" prefWidth="1600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.GenKeyCtrl">
+    <children>
+        <Pane id="sidePane" prefHeight="902.0" prefWidth="136.0" stylesheets="@../asset/asset.css">
+            <children>
+                <ImageView fitHeight="34.0" fitWidth="42.0" layoutX="47.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../asset/aesluclogo.png" />
+                    </image>
+                </ImageView>
+                <Button id="sideButton" layoutX="30.0" layoutY="325.0" mnemonicParsing="false" onMouseClicked="#handleButtonDashboard" prefHeight="65.0" prefWidth="75.0" style="-fx-effect: innershadow( gaussian , #6961f0 , 7 , 1 , 1 , 1 );" stylesheets="@../asset/asset.css">
+                    <font>
+                        <Font name="Cabin Regular" size="18.0" />
+                    </font>
+                    <graphic>
+                        <ImageView fitHeight="35.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../asset/mhome.png" />
+                            </image>
+                        </ImageView>
+                    </graphic></Button>
+                <Button id="sideButton" layoutX="35.0" layoutY="412.0" mnemonicParsing="false" onMouseClicked="#handleButtonAvalanche" prefHeight="65.0" prefWidth="67.0" stylesheets="@../asset/asset.css">
+                    <font>
+                        <Font name="Cabin Regular" size="18.0" />
+                    </font>
+                    <graphic>
+                        <ImageView fitHeight="35.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../asset/mavtst.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button id="sideButton" layoutX="35.0" layoutY="495.0" mnemonicParsing="false" onMouseClicked="#handleButtonBatchTest" prefHeight="62.0" prefWidth="67.0" stylesheets="@../asset/asset.css">
+                    <font>
+                        <Font name="Cabin Regular" size="18.0" />
+                    </font>
+                    <graphic>
+                        <ImageView fitHeight="35.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../asset/mbatch.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+            </children>
+        </Pane>
+        <ImageView fitHeight="899.0" fitWidth="1603.0" layoutX="145.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../asset/bg1.png" />
+            </image>
+        </ImageView>
+        <TextField fx:id="tf_inputPkey" layoutX="220.0" layoutY="518.0" prefHeight="46.0" prefWidth="246.0" promptText="P Key will appear here" stylesheets="@../asset/asset.css">
+            <font>
+                <Font name="Cabin Regular" size="22.0" />
+            </font></TextField>
+        <Button layoutX="220.0" layoutY="327.0" mnemonicParsing="false" onMouseClicked="#handleButtonGenerate" prefHeight="45.0" prefWidth="550.0" stylesheets="@../asset/asset.css" text="Generate" textFill="#eeeeee">
+            <font>
+                <Font name="Cabin Bold" size="18.0" />
+            </font>
+        </Button>
+        <TextField fx:id="tf_inputNkey" layoutX="220.0" layoutY="602.0" prefHeight="43.0" prefWidth="550.0" promptText="N Key will appear here" stylesheets="@../asset/asset.css">
+            <font>
+                <Font name="Cabin Regular" size="22.0" />
+            </font></TextField>
+        <Text fill="#3f3d56" layoutX="269.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Generate Key">
+            <font>
+                <Font name="Ubuntu Bold" size="62.0" />
+            </font>
+        </Text>
+        <Text fill="#6961f0" layoutX="231.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LUC Key Size">
+            <font>
+                <Font name="Cabin Bold" size="22.0" />
+            </font>
+        </Text>
+        <Line endX="64.33331298828125" endY="9.333328247070312" fill="#3f3d56" layoutX="792.0" layoutY="229.0" startX="64.33331298828125" startY="466.33331298828125" stroke="#3f3d56" strokeWidth="5.0" />
+        <ImageView fitHeight="60.0" fitWidth="56.0" layoutX="205.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../asset/genkey2.png" />
+            </image>
+        </ImageView>
+        <ComboBox fx:id="cb_maxkeysize" layoutX="219.0" layoutY="269.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="43.0" prefWidth="550.0" promptText="Maximum Key Size" stylesheets="@../asset/asset.css" />
+        <TextField fx:id="tf_inputQkey" layoutX="523.0" layoutY="518.0" prefHeight="46.0" prefWidth="246.0" promptText="Q Key will appear here" stylesheets="@../asset/asset.css">
+            <font>
+                <Font name="Cabin Regular" size="22.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="tf_inputpubkey" layoutX="219.0" layoutY="438.0" prefHeight="43.0" prefWidth="550.0" promptText="Public Key will appear here" stylesheets="@../asset/asset.css">
+            <font>
+                <Font name="Cabin Regular" size="22.0" />
+            </font>
+        </TextField>
+      <Text fill="#6961f0" layoutX="222.0" layoutY="431.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Public Key">
+         <font>
+            <Font name="Cabin Bold" size="22.0" />
+         </font>
+      </Text>
+      <Text fill="#6961f0" layoutX="223.0" layoutY="514.0" strokeType="OUTSIDE" strokeWidth="0.0" text="P Key">
+         <font>
+            <Font name="Cabin Bold" size="22.0" />
+         </font>
+      </Text>
+      <Text fill="#6961f0" layoutX="223.0" layoutY="596.0" strokeType="OUTSIDE" strokeWidth="0.0" text="N Key">
+         <font>
+            <Font name="Cabin Bold" size="22.0" />
+         </font>
+      </Text>
+      <Text fill="#6961f0" layoutX="526.0" layoutY="514.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Q Key">
+         <font>
+            <Font name="Cabin Bold" size="22.0" />
+         </font>
+      </Text>
+      <Button fx:id="bt_copy" layoutX="220.0" layoutY="660.0" mnemonicParsing="false" onMouseClicked="#handleButtonCopy1" prefHeight="45.0" prefWidth="550.0" stylesheets="@../asset/asset.css" text="Copy" textFill="#eeeeee">
+         <font>
+            <Font name="Cabin Bold" size="18.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="249.0" fitWidth="299.0" layoutX="1057.0" layoutY="266.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/illustgenkey.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER_RIGHT" layoutX="1036.0" layoutY="506.0" prefHeight="88.0" prefWidth="358.0" text="Please do not send your P and Q Key to another person! " textAlignment="CENTER" textOverrun="CLIP" wrapText="true">
+         <font>
+            <Font name="Cabin Bold" size="22.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="62.0" fitWidth="46.0" layoutX="946.0" layoutY="552.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/alert.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER_RIGHT" layoutX="1036.0" layoutY="556.0" prefHeight="88.0" prefWidth="358.0" text="Reminder, the only information you need to send to the Message Sender are Public Key and N Key " textAlignment="CENTER" textFill="GREY" textOverrun="CLIP" wrapText="true">
+         <font>
+            <Font name="Cabin Regular" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="62.0" fitWidth="46.0" layoutX="1427.0" layoutY="552.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/alert.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

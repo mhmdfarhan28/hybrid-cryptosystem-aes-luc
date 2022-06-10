@@ -1,0 +1,101 @@
+
+.text-field {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent transparent #3f3d56 transparent;
+    -fx-border-width: 2;
+}
+.text-field:error {
+    -fx-border-color: transparent transparent #ff5555 transparent;
+}
+.button {
+    -fx-background-color: #6961f0;
+    -fx-background-radius: 5;
+}
+.button:hover{
+    -fx-background-color: #8780ff;
+}
+.button:pressed{
+    -fx-background-color: #3f3d56;
+}
+.combo-box {
+    -fx-font-size: 22;
+    -fx-font-family: Cabin;
+    -fx-background-color: transparent;
+    -fx-border-color: transparent transparent #3f3d56 transparent;
+    -fx-border-width: 2;
+}
+.combo-box .list-cell:hover{
+     -fx-background-color: #3f3d56;
+     -fx-text-background-color: white;
+}
+
+.combo-box:error {
+    -fx-border-color: transparent transparent #ff5555 transparent;
+}
+
+.table-view{
+    -fx-background-color : transparent;
+    -fx-font-size: 13;
+    -fx-font-family: Cabin;
+    -fx-border-color: #3f3d56;
+    -fx-border-width: 3;
+    -fx-background-radius: 5;
+}
+.table-view .column-header-background{
+    -fx-background-color: #f9f9f9;
+    -fx-background-radius: 7px 7px 0px 0px;
+    -fx-padding: 20px 0 20px 0;
+    -fx-wrap-text: TRUE;
+}
+.table-view .column-header {
+     -fx-background-color: transparent;
+     -fx-text-background-color: #3f3d56;
+}
+.table-view .table-cell{
+     -fx-border-color: transparent;
+     -fx-padding: 5px 0 5px 0;
+ }
+ .table-row-cell: hover {
+     -fx-background-color: #6961f0;
+     -fx-text-background-color: #6961f0;
+ }
+ .table-row-cell: odd{
+     -fx-background-color: #f9f9f9;
+ }
+ .table-row-cell: even{
+     -fx-background-color: white;
+ }
+
+
+
+#sidePane {
+    -fx-background-color: #3f3d56ff;
+}
+#sideButton.button{
+    -fx-background-color:transparent;
+}
+#sideButton.button:hover ImageView {
+    -fx-effect: innershadow( gaussian , #6961f0 , 7 , 1 , 1 , 1 );
+}
+#dashboardMenuButton.button {
+    -fx-background-color: transparent;
+    -fx-border-color: #504e6d;
+    -fx-border-width: 3;
+    -fx-border-radius: 20;
+}
+#dashboardMenuButton.button:hover {
+    -fx-border-color: #6961f0;
+}
+#dashboardMenuButton.button:pressed {
+    -fx-border-color: #504e6d;
+}
+
+.button:inactive{
+    -fx-background-color: #3f3d56;
+ }
+.button:inactive:hover{
+    -fx-background-color: #8780ff;
+}
+.button:inactive:pressed{
+    -fx-background-color: #6961f0;
+}
